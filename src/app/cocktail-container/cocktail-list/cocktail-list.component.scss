@@ -1,0 +1,30 @@
+.selected{
+  background-color: rgb(232, 232, 232);
+}
+input{
+  border: 1px solid rgb(162, 162, 162);
+  padding: 5px 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width:100%;
+  cursor: pointer;
+
+  &:hover{
+    background: rgb(249, 248, 248);
+
+  }
+
+  &.btn{
+    width:fit-content;
+    border:none;
+    padding:10px 15px;
+
+    &:hover{
+      background: rgb(119, 136, 250);
+    }
+  }
+}
+
+label{
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+<div *ngIf="cocktail" class="flex flex-col w-full">
+  <img class="mb-4" [src]="cocktail.img" alt="cocktail">
+  <h3 class="mb-4">{{cocktail.name}}</h3>
+  <p class="mb-4">{{cocktail.description}}</p>
+  <div>
+    <button class="btn btn-primary">Edit Cocktail</button>
+  </div>
+</div>

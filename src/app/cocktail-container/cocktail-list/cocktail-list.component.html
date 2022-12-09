@@ -1,0 +1,9 @@
+<div class="w-full">
+  <h3 class="mb-4 text-xl font-bold">Listes des coktails</h3>
+  <ul class="list-primary mb-4">
+    <li *ngFor="let cocktail of cocktails ; let index = index" (click)="selectCocktail(index)">
+      {{cocktail.name}}
+    </li>
+  </ul>
+  <button class="btn btn-primary">Ajouter</button>
+</div>

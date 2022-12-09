@@ -1,1 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color:inherit
+}
+
+:root{
+  --font-family :  "Roboto", sans-serif;
+  --primary :#546de5 ;
+  --secondary: #778beb ;
+  --accent : #e5546d ;
+  --lightgray : #ddd ;
+  --text-regular : #444 ;
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--text-regular)
+}
+
+.debug1{
+  border : 1px solid red
+}
+.debug2{
+  border : 1px solid green
+}
+
+.container {
+  max-width : 1200px;
+  margin:auto;
+  padding:20px
+}
+
+.list-primary{
+  li {
+    padding:10px 15px;
+    border : 1px solid var(--lightgray);
+    border-top:0;
+
+    &:hover{
+      background-color: var(--primary);
+      color:white;
+      transition: all 0.4s;
+      cursor: pointer;
+    }
+  }
+  
+  li:nth-child(1){
+    border-top : 1px solid var(--lightgray);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  li:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
+
+.btn{
+  width :fit-content;
+  padding:10px 15px;
+  background: white;
+  border:0;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &-primary{
+    background-color: var(--primary);
+    transition: background-color 0.3s;
+    color:white;
+    &:hover{
+      background-color: var(--secondary);
+    }
+  }
+
+  &-danger{
+    background-color: rgb(198, 39, 39);
+    color:white;
+    &:hover{
+      background-color: rgb(192, 104, 104)
+    }
+  }
+}
